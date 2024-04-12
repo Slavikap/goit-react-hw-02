@@ -1,0 +1,12 @@
+.FeedbackBtn {
+      background-color: lightgrey;
+      color: black;
+} 
+.FeedbackWrapper {
+      display: flex;
+      gap: 10px;
+}
+.ResetBtn {
+      background-color: lightgrey;
+      color: black;   
+}
