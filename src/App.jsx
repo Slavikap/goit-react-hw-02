@@ -22,6 +22,10 @@ function App() {
 
   const totalFeedback = good + neutral + bad;
 
+  const positiveFeedback = () => {
+    return Math.round((good / totalFeedback) * 100);
+  };
+
   const Good = () => {
     setState(prevState => ({
       ...prevState,
@@ -67,6 +71,7 @@ function App() {
           neutral={neutral}
           bad={bad}
           totalFeedback={totalFeedback}
+          positiveFeedback={positiveFeedback()}
         />
       ) : (
         <Notification message="No feedback given yet" />
